@@ -30,7 +30,7 @@ const Header = () => {
         <div className={`${isHero ? 'bg-transparent' : 'bg-blue-dark'} rounded-full px-6 py-3 shadow-lg flex items-center justify-between transition-colors duration-300`}>
           <div className="flex items-center space-x-8">
             <div className="flex items-center space-x-2 pr-8">
-              <div className="w-36 h-16 bg-transparent rounded flex items-center justify-center p-0">
+              <div className="w-24 md:w-36 h-12 md:h-16 bg-transparent rounded flex items-center justify-center p-0">
                 <img 
                   src="/8d449375-2572-4fca-95f4-3e05daf166ca_removalai_preview (1).png" 
                   alt="Infinite Spa Logo" 
@@ -40,7 +40,7 @@ const Header = () => {
               </div>
             </div>
             
-            <nav className="hidden md:flex items-center space-x-6 text-white">
+            <nav className="hidden lg:flex items-center space-x-6 text-white">
               <button 
                 onClick={() => scrollToSection('spa-designs')}
                 className="text-white font-medium hover:text-sky-300 transition-colors"
@@ -73,7 +73,7 @@ const Header = () => {
               </button>
             </nav>
             
-            <button className="md:hidden text-white">
+            <button className="lg:hidden text-white">
               <Menu className="w-5 h-5 text-gray-700" />
             </button>
           </div>
@@ -81,13 +81,13 @@ const Header = () => {
           <div className="flex items-center space-x-3 text-white">
             <button 
               onClick={() => scrollToSection('catalogue')}
-              className="px-4 py-2 text-white hover:text-sky-300 font-medium transition-colors"
+              className="hidden md:block px-4 py-2 text-white hover:text-sky-300 font-medium transition-colors"
             >
               Order catalogue
             </button>
             <button 
               onClick={() => scrollToSection('contact')}
-              className="px-6 py-2 bg-sky-500 text-white rounded-full hover:bg-sky-400 font-medium transition-colors"
+              className="hidden md:block px-6 py-2 bg-sky-500 text-white rounded-full hover:bg-sky-400 font-medium transition-colors"
             >
               Find Infinite-Spa Agent
             </button>
