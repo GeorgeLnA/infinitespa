@@ -34,7 +34,7 @@ const HouseRanges = () => {
             poster="/6_Photo - 4 (1).jpg"
           />
           {/* Tabs at the top */}
-          <div className="absolute top-6 left-6 flex gap-2 z-10">
+          <div className="absolute top-6 left-6 hidden lg:flex gap-2 z-10">
             {tabs.map((tab, index) => (
               <button
                 key={index}
@@ -50,7 +50,7 @@ const HouseRanges = () => {
             ))}
           </div>
           {/* Pop-out Description Card */}
-          <div className="absolute bottom-6 left-6 bg-blue-dark/95 rounded-2xl p-8 max-w-md z-10 shadow-2xl">
+          <div className="absolute bottom-6 left-6 bg-blue-dark/95 rounded-2xl p-4 lg:p-8 max-w-sm lg:max-w-md z-10 shadow-2xl hidden lg:block">
             <h3 className="text-xl font-bold text-white mb-4">{`Step ${activeTab + 1}`}</h3>
             <p className="text-white text-base leading-relaxed">{tabs[activeTab]}</p>
           </div>

@@ -28,8 +28,8 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 px-6 py-4 transition-all duration-300">
       <div className="max-w-7xl mx-auto">
         <div className={`${isHero ? 'bg-transparent' : 'bg-blue-dark'} rounded-full px-6 py-3 shadow-lg flex items-center justify-between transition-colors duration-300`}>
-          <div className="flex items-center space-x-8">
-            <div className="flex items-center space-x-2 pr-8">
+          <div className="flex items-center space-x-2 lg:space-x-8">
+            <div className="flex items-center space-x-2 pr-2 lg:pr-8">
               <div className="w-24 md:w-36 h-12 md:h-16 bg-transparent rounded flex items-center justify-center p-0">
                 <img 
                   src="/8d449375-2572-4fca-95f4-3e05daf166ca_removalai_preview (1).png" 
@@ -40,7 +40,7 @@ const Header = () => {
               </div>
             </div>
             
-            <nav className="hidden lg:flex items-center space-x-6 text-white">
+            <nav className="hidden lg:flex items-center space-x-6 text-white flex-1">
               <button 
                 onClick={() => scrollToSection('spa-designs')}
                 className="text-white font-medium hover:text-sky-300 transition-colors"
@@ -73,7 +73,7 @@ const Header = () => {
               </button>
             </nav>
             
-            <button className="lg:hidden text-white">
+            <button className="lg:hidden text-white ml-auto">
               <Menu className="w-5 h-5 text-gray-700" />
             </button>
           </div>
